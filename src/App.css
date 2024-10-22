@@ -1,0 +1,93 @@
+/* src/App.css */
+
+.chat-container {
+  margin: 20px auto; /* Üstten 20px boşluk ekler */
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: rgb(240, 246, 247);
+  border-radius: 10px; /* 20px yuvarlatma ekler */
+  overflow: hidden; /* Kenarları yuvarlatılmış içeriği düzgün göstermek için */
+  padding: 10px;
+}
+
+.message-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Dikey hizalama için */
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px; /* Yuvarlatılmış köşeler için */
+  max-width: 70%;
+  word-wrap: break-word; /* Uzun kelimeleri kırmak için */
+  transition: all 0.3s ease; /* Geçiş efekti için */
+}
+
+/* Kullanıcı mesajı sağda */
+.message.user {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+}
+
+/* Bot mesajı solda */
+.message.bot {
+  background-color: #f8d7da;
+  align-self: flex-start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+}
+
+/* Mesaj kutucuğuna hover efekti */
+.message:hover {
+  transform: translateY(-2px); /* Yukarı hareket efekti */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+}
+
+input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Gönder butonu için pastel yeşil stil */
+.send-button {
+  padding: 10px 20px;
+  background-color: #52df77; /* Pastel yeşil */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #51ed5e; /* Daha koyu pastel yeşil */
+}
+
+/* Temizleme butonu için pastel kırmızı stil */
+.clear-button {
+  padding: 10px 20px;
+  background-color: #d61717; /* Pastel kırmızı */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #fc1111; /* Daha koyu pastel kırmızı */
+}
