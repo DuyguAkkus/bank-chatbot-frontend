@@ -2,7 +2,7 @@
 
 Bu proje, kullanıcıların bankacılık ile ilgili sorularını yanıtlamak için bir chatbot uygulaması geliştirmeyi amaçlamaktadır. Uygulama, Python ve Flask ile geliştirilmiştir ve React kullanılarak bir ön yüz (frontend) tasarlanmıştır. Kullanıcılar, chatbot ile etkileşimde bulunarak sorularını sorabilir ve anlık yanıtlar alabilir.
 
-![Chatbot Arayüzü](images/images.png)
+![Chatbot Arayüzü](images/image.png)
 
 ## Proje Bileşenleri
 
